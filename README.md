@@ -52,7 +52,7 @@ TOOL - Unauthenticated Remote DNS change/ users & passwords.
 - Dependencies:
 ------
 ```
-  sudo apt-get install curl libcurl3 libcurl3-dev php5 php5-cli php5-curl033
+  sudo apt-get install curl libcurl3 libcurl3-dev php5 php5-cli php5-curl
 ```
 - EDITING TO ADD NEW EXPLOITS GETS:
 ------
