@@ -1,6 +1,21 @@
 # RouterHunterBR
 TOOL - Unauthenticated Remote DNS , Scanner ranger IP.
 
+ * Script exploit developed by INURL - BRAZIL
+ * Script Name: SCANNER RouterHunterBR 1.0
+ * TIPE: TOOL - Unauthenticated Remote DNS 
+ * AUTOR*: Cleiton Pinheiro / NICK: GoogleINURL
+ * AUTOR: Jhonathan davi / NICK: Jhoon
+ * EMAIL*: inurllbr@gmail.com
+ * Blog*: http://blog.inurl.com.br
+ * Twitter*: https://twitter.com/googleinurl
+ * Fanpage*: https://fb.com/InurlBrasil
+ * GIT*: https://github.com/googleinurl
+ * PASTEBIN*: http://pastebin.com/u/googleinurl
+ * YOUTUBE* https://www.youtube.com/channel/UCFP-WEzs5Ikdqw0HBLImGGA
+ * PACKETSTORMSECURITY:* http://packetstormsecurity.com/user/googleinurl/
+
+
 - Description:
 ------
   The script explores three vulnerabilities in routers
