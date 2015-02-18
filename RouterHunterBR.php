@@ -1,6 +1,6 @@
 <?php
 ################################################################################
-# [!] legal disclaimer: Usage of RouterHunter for attacking targets without prior mutual consent is illegal. 
+# [!] legal disclaimer: Usage of RouterHunterBR for attacking targets without prior mutual consent is illegal. 
 # It is the end user's responsibility to obey all applicable local, state and federal laws.
 # Developers assume no liability and are not responsible for any misuse or damage caused by this program
 ################################################################################
@@ -344,8 +344,8 @@ function main($params) {
 
     //IMPLEMENTATION HOME
     echo __banner("{$_SESSION["c13"]}{$params['line']}{$_SESSION["c00"]}", 1);
-    echo "{$_SESSION["c01"]}Starting SCANNER RouterHunter 1.0 at [" . date("d-m-Y H:i:s") . "]{$_SESSION["c09"]}
-[!] legal disclaimer: Usage of RouterHunter for attacking targets without prior mutual consent is illegal. 
+    echo "{$_SESSION["c01"]}Starting SCANNER RouterHunterBR 1.0 at [" . date("d-m-Y H:i:s") . "]{$_SESSION["c09"]}
+[!] legal disclaimer: Usage of RouterHunterBR for attacking targets without prior mutual consent is illegal. 
 It is the end user's responsibility to obey all applicable local, state and federal laws.
 Developers assume no liability and are not responsible for any misuse or damage caused by this program{$_SESSION["c00"]}\n\n";
 
