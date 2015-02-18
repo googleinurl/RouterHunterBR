@@ -1,4 +1,9 @@
 <?php
+################################################################################
+# [!] legal disclaimer: Usage of RouterHunter for attacking targets without prior mutual consent is illegal. 
+# It is the end user's responsibility to obey all applicable local, state and federal laws.
+# Developers assume no liability and are not responsible for any misuse or damage caused by this program
+################################################################################
 
 /*
  * Script exploit developed by INURL - BRAZIL
@@ -14,7 +19,7 @@
  * PASTEBIN*: http://pastebin.com/u/googleinurl
  * YOUTUBE* https://www.youtube.com/channel/UCFP-WEzs5Ikdqw0HBLImGGA
  * PACKETSTORMSECURITY:* http://packetstormsecurity.com/user/googleinurl/
-  ----------------------------------------------------------
+  ------------------------------------------------------------------------------
 
  * Description:*
   The script explores four vulnerabilities in routers
@@ -28,9 +33,9 @@
   reference: http://www.exploit-db.com/exploits/36014/
 
   04 - D-Link DSL-2640B Unauthenticated Remote DNS Change Exploit
-  reference: http://1337day.com/exploit/23302/  
+  reference: http://1337day.com/exploit/23302/
 
-  ----------------------------------------------------------
+  ------------------------------------------------------------------------------
 
  * Execute*
   Simple search:   php RouterHunterBR.php --range '177.100.255.1-20' --dns1  8.8.8.8 --dns2 8.8.4.4 --output result.txt
@@ -41,15 +46,15 @@
   --proxy 'localhost:8118'
   --proxy 'socks5://googleinurl@localhost:9050'
   --proxy 'http://admin:12334@172.16.0.90:8080'
-  ----------------------------------------------------------
+  ------------------------------------------------------------------------------
 
  * Dependencies*
   sudo apt-get install curl libcurl3 libcurl3-dev php5 php5-cli php5-curl033
-  ----------------------------------------------------------
+  ------------------------------------------------------------------------------
 
- *Update*
+ * Update*
   https://github.com/googleinurl/RouterHunterBR
-  ----------------------------------------------------------
+  ------------------------------------------------------------------------------
  */
 
 error_reporting(1);
@@ -338,7 +343,12 @@ function __subProcess($params, $target) {
 function main($params) {
 
     //IMPLEMENTATION HOME
-    echo __banner("{$_SESSION["c13"]}{$params['line']}\n{$_SESSION["c00"]}", 1);
+    echo __banner("{$_SESSION["c13"]}{$params['line']}{$_SESSION["c00"]}", 1);
+    echo "{$_SESSION["c01"]}Starting SCANNER RouterHunter 1.0 at [" . date("d-m-Y H:i:s") . "]{$_SESSION["c09"]}
+[!] legal disclaimer: Usage of RouterHunter for attacking targets without prior mutual consent is illegal. 
+It is the end user's responsibility to obey all applicable local, state and federal laws.
+Developers assume no liability and are not responsible for any misuse or damage caused by this program{$_SESSION["c00"]}\n\n";
+
     if ($params['op'] == 0) {
 
         //WORKING WITH IPS ON TRACK
