@@ -11,7 +11,7 @@ Developers assume no liability and are not responsible for any misuse or damage 
  * Script exploit developed by INURL - BRAZIL
  * Script Name: SCANNER RouterHunterBR 1.0
  * TIPE: TOOL - Unauthenticated Remote DNS change/ users & passwords 
- * AUTOR*: Cleiton Pinheiro / NICK: GoogleINURL
+ * AUTOR*: GoogleINURL
  * AUTOR: Jhonathan davi / NICK: Jhoon
  * EMAIL*: inurllbr@gmail.com
  * Blog*: http://blog.inurl.com.br
